@@ -9,3 +9,5 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 //comment
 await builder.Build().RunAsync();
+// This comment is added to test the file change detection.
+// Another comment to ensure the file is not empty.
